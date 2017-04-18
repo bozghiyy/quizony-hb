@@ -1,0 +1,337 @@
+<!-- Header Bidding START -->
+<script type="text/javascript" src="/static/js/ad/prebid.min.js" async></script>
+<script type="text/javascript" src="//quizony-d.openx.net/w/1.0/jstag"></script>
+<script type="text/javascript" >
+var PREBID_TIMEOUT = 2000;
+
+var pbjs = pbjs || {};
+pbjs.que = pbjs.que || [];
+var adUnits = adUnits || [];
+var OX_qzy = OX_qzy || [];
+var width = window.innerWidth || document.documentElement.clientWidth;
+
+if(DeviceType.isDesktop()){
+   /***
+   *  Desktop Adunits
+   ***/
+   if (width > 750){
+        adUnits.push({ //Quizony_Desktop_300x250_ATF_A
+                        code:"QzD3x6A",
+                        oxId:"538684871",
+                        sizes:[[300,250],[300,600]],
+                        bids:[
+                                {bidder:"defymedia",params:{placementId:"10845382"}},
+                                {bidder: 'rubicon',params: {accountId: '15804',siteId: '105760',zoneId: '594558'}},
+                                {bidder: 'index',params: {id: "3",siteID: 190344}},
+                                {bidder:"districtm",params:{id:"142224"}},
+                                {bidder: "aol",params: {placement: "4478755",network: "10668.1"}},
+                                {bidder: 'sovrn', params: {tagid: '435032'}},
+                                {bidder: 'sovrn', params: {tagid: '435033'}}
+                            ]
+                    });
+    }
+
+	adUnits.push({ //Quizony_Desktop_300x250_ATF_B
+			  		code:"QzD3x6B",
+			  		oxId:"538684872",
+			  		sizes:[[300,250],[300,600]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851153"}},
+			  				{bidder: 'rubicon',params: {accountId: '15804',siteId: '105760',zoneId: '595356'}},
+			  				{bidder: 'index',params: {id: "4",siteID: 190345}},
+			  				{bidder:"districtm",params:{id:"142225"}},
+			  				{bidder: "aol",params: {placement: "4478757",network: "10668.1"}}, 
+			  				{bidder: 'sovrn', params: {tagid: '435034'}}, 
+			  				{bidder: 'sovrn', params: {tagid: '435035'}}
+			  			]
+	  		});
+	adUnits.push({ //Quizony_Desktop_300x250_C
+			  		code:"QzD3x2C",
+			  		oxId:"538684906",
+			  		sizes:[[300,250]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851154"}},
+			  				{bidder: 'rubicon',params: {accountId: '15804',siteId: '105760',zoneId: '595358'}},
+			  				{bidder: 'index',params: {id: "5",siteID: 190346}},
+			  				{bidder:"districtm",params:{id:"142226"}},
+			  				{bidder: "aol",params: {placement: "4478758",network: "10668.1"}}, 
+			  				{bidder: 'sovrn', params: {tagid: '435036'}}
+			  			]
+	  			});
+
+	adUnits.push({ //Quizony_Desktop_300x250_D
+			  		code:"QzD3x2D",
+			  		oxId:"538684907",
+			  		sizes:[[300,250]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851155"}},
+			  				{bidder: 'rubicon',params: {accountId: '15804',siteId: '105760',zoneId: '595360'}},
+			  				{bidder: 'index',params: {id: "6",siteID: 190347}},
+			  				{bidder:"districtm",params:{id:"142227"}},
+			  				{bidder: "aol",params: {placement: "4478754",network: "10668.1"}}, 
+			  				{bidder: 'sovrn', params: {tagid: '435037'}}
+			  			]
+	  		});
+	adUnits.push({ //Quizony_Desktop_728x90_A
+			  		code:"QzD7x9A",
+			  		oxId:"538684854",
+			  		sizes:[[728,90]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851149"}},
+			  				{bidder: 'rubicon',params: {accountId: '15804',siteId: '105760',zoneId: '595352'}},
+			  				{bidder: 'index',params: {id: "1",siteID: 190342}},
+			  				{bidder:"districtm",params:{id:"142222"}},
+			  				{bidder: "aol",params: {placement: "4478756",network: "10668.1"}}, 
+			  				{bidder: 'sovrn', params: {tagid: '435030'}}
+			  			]
+	  			});
+
+	adUnits.push({ //Quizony_Desktop_728x90_B
+			  		code:"QzD7x9B",
+			  		oxId:"538684869",
+			  		sizes:[[728,90]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851150"}},
+			  				{bidder: 'rubicon',params: {accountId: '15804',siteId: '105760',zoneId: '595354'}},
+			  				{bidder: 'index',params: {id: "2",siteID: 190343}},
+			  				{bidder:"districtm",params:{id:"142223"}},
+			  				{bidder: "aol",params: {placement: "4478759",network: "10668.1"}}, 
+			  				{bidder: 'sovrn', params: {tagid: '435031'}}
+			  			]
+	  		});
+} else if(DeviceType.isIOS()) {
+	/***
+	*	iOS Adunits
+	***/
+	adUnits.push({ //Quizony_iOS_300x250_A
+			  		code:"QzMi3x2A",
+			  		oxId:"538684929",
+			  		sizes:[[300,250]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851180"}},
+			  				{bidder: 'rubicon',params: {accountId: '15804',siteId: '105760',zoneId: '595378'}},
+			  				{bidder: 'index',params: {id: "15",siteID: 190356}},
+			  				{bidder:"districtm",params:{id:"142236"}},
+			  				{bidder: "aol",params: {placement: "4478765",network: "10668.1"}}, 
+			  				{bidder: 'sovrn', params: {tagid: '435046'}}
+			  			]
+	  		});	
+	adUnits.push({ //Quizony_iOS_300x250_B
+			  		code:"QzMi3x2B",
+			  		oxId:"538684930",
+			  		sizes:[[300,250]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851181"}},
+			  				{bidder: 'rubicon',params: {accountId: '15804',siteId: '105760',zoneId: '595384'}},
+			  				{bidder: 'index',params: {id: "16",siteID: 190357}},
+			  				{bidder:"districtm",params:{id:"142237"}},
+			  				{bidder: "aol",params: {placement: "4478763",network: "10668.1"}}, 
+			  				{bidder: 'sovrn', params: {tagid: '435047'}}
+			  			]
+	  		});	
+	adUnits.push({ //Quizony_iOS_300x250_C
+			  		code:"QzMi3x2C",
+			  		oxId:"538684931",
+			  		sizes:[[300,250]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851184"}},
+			  				{bidder: 'rubicon',params: {accountId: '15804',siteId: '105760',zoneId: '595386'}},
+			  				{bidder: 'index',params: {id: "17",siteID: 190358}},
+			  				{bidder:"districtm",params:{id:"142238"}},
+			  				{bidder: "aol",params: {placement: "4478769",network: "10668.1"}}, 
+			  				{bidder: 'sovrn', params: {tagid: '435048'}}
+			  			]
+	  		});	
+	adUnits.push({ //Quizony_iOS_300x250_D
+			  		code:"QzMi3x2D",
+			  		oxId:"538684932",
+			  		sizes:[[300,250]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851191"}},
+			  				{bidder: 'rubicon',params: {accountId: '15804',siteId: '105760',zoneId: '595390'}},
+			  				{bidder: 'index',params: {id: "18",siteID: 190359}},
+			  				{bidder:"districtm",params:{id:"142239"}},
+			  				{bidder: "aol",params: {placement: "4478767",network: "10668.1"}}, 
+			  				{bidder: 'sovrn', params: {tagid: '435049'}}
+			  			]
+	  		});	
+	adUnits.push({ //Quizony_iOS_300x250_E
+			  		code:"QzMi3x2E",
+			  		oxId:"538684933",
+			  		sizes:[[300,250]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851192"}},
+			  				{bidder: 'rubicon',params: {accountId: '15804',siteId: '105760',zoneId: '595394'}},
+			  				{bidder: 'index',params: {id: "19",siteID: 190360}},
+			  				{bidder:"districtm",params:{id:"142240"}},
+			  				{bidder: "aol",params: {placement: "4478772",network: "10668.1"}}, 
+			  				{bidder: 'sovrn', params: {tagid: '435050'}}
+			  			]
+	  		});	
+	adUnits.push({ //Quizony_iOS_300x250_F
+			  		code:"QzMi3x2F",
+			  		oxId:"538684934",
+			  		sizes:[[300,250]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851193"}},
+			  				{bidder: 'rubicon',params: {accountId: '15804',siteId: '105760',zoneId: '595396'}},
+			  				{bidder: 'index',params: {id: "20",siteID: 190361}},
+			  				{bidder:"districtm",params:{id:"142241"}},
+			  				{bidder: "aol",params: {placement: "4478773",network: "10668.1"}}, 
+			  				{bidder: 'sovrn', params: {tagid: '435051'}}
+			  			]
+	  		});		  			  			
+} else if(DeviceType.isAndroid()){
+	/***
+	*	Android Adunits
+	***/	
+	adUnits.push({ //Quizony_Android_300x250_A
+			  		code:"QzMa3x2A",
+			  		oxId:"538684911",
+			  		sizes:[[300,250]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851160"}},
+			  				{bidder: 'rubicon',params: {accountId: '15804',siteId: '105760',zoneId: '595366'}},
+			  				{bidder: 'index',params: {id: "9",siteID: 190350}},
+			  				{bidder:"districtm",params:{id:"142230"}},
+			  				{bidder: "aol",params: {placement: "4478762",network: "10668.1"}}, 
+			  				{bidder: 'sovrn', params: {tagid: '435040'}}
+			  			]
+	  		});	
+	adUnits.push({ //Quizony_Android_300x250_B
+			  		code:"QzMa3x2B",
+			  		oxId:"538684922",
+			  		sizes:[[300,250]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851161"}},
+			  				{bidder: 'rubicon',params: {accountId: '15804',siteId: '105760',zoneId: '595368'}},
+			  				{bidder: 'index',params: {id: "10",siteID: 190351}},
+			  				{bidder:"districtm",params:{id:"142231"}},
+			  				{bidder: "aol",params: {placement: "4478766",network: "10668.1"}}, 
+			  				{bidder: 'sovrn', params: {tagid: '435041'}}
+			  			]
+	  		});	
+	adUnits.push({ //Quizony_Android_300x250_C
+			  		code:"QzMa3x2C",
+			  		oxId:"538684923",
+			  		sizes:[[300,250]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851166"}},
+			  				{bidder: 'rubicon',params: {accountId: '15804',siteId: '105760',zoneId: '595370'}},
+			  				{bidder: 'index',params: {id: "11",siteID: 190352}},
+			  				{bidder:"districtm",params:{id:"142232"}},
+			  				{bidder: "aol",params: {placement: "4478771",network: "10668.1"}}, 
+			  				{bidder: 'sovrn', params: {tagid: '435042'}}
+			  			]
+	  		});	
+	adUnits.push({ //Quizony_Android_300x250_D
+			  		code:"QzMa3x2D",
+			  		oxId:"538684924",
+			  		sizes:[[300,250]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851167"}},
+			  				{bidder: 'rubicon',params: {accountId: '15804',siteId: '105760',zoneId: '595372'}},
+			  				{bidder: 'index',params: {id: "12",siteID: 190353}},
+			  				{bidder:"districtm",params:{id:"142233"}},
+			  				{bidder: "aol",params: {placement: "4478768",network: "10668.1"}}, 
+			  				{bidder: 'sovrn', params: {tagid: '435043'}}
+			  			]
+	  		});	
+	adUnits.push({ //Quizony_Android_300x250_E
+			  		code:"QzMa3x2E",
+			  		oxId:"538684927",
+			  		sizes:[[300,250]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851168"}},
+			  				{bidder: 'rubicon',params: {accountId: '15804',siteId: '105760',zoneId: '595374'}},
+			  				{bidder: 'index',params: {id: "13",siteID: 190354}},
+			  				{bidder:"districtm",params:{id:"142234"}},
+			  				{bidder: "aol",params: {placement: "4478764",network: "10668.1"}}, 
+			  				{bidder: 'sovrn', params: {tagid: '435044'}}
+			  			]
+	  		});	
+	adUnits.push({ //Quizony_Android_300x250_F
+			  		code:"QzMa3x2F",
+			  		oxId:"538684928",
+			  		sizes:[[300,250]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851169"}},
+			  				{bidder: 'rubicon',params: {accountId: '15804',siteId: '105760',zoneId: '595376'}},
+			  				{bidder: 'index',params: {id: "14",siteID: 190355}},
+			  				{bidder:"districtm",params:{id:"142235"}},
+			  				{bidder: "aol",params: {placement: "4478770",network: "10668.1"}}, 
+			  				{bidder: 'sovrn', params: {tagid: '435045'}}
+			  			]
+	  		});	
+}
+
+function initAdserver() {
+        if (pbjs.initAdserverSet) return;
+
+        for (var i = 0, len = adUnits.length; i < len; i++) {
+        	OX_qzy[i] = OX();
+	        OX_qzy[i].addAdUnit(adUnits[i].oxId);
+	  		OX_qzy[i].setAdUnitSlotId(adUnits[i].oxId,adUnits[i].code);
+	  		var targeting = pbjs.getAdserverTargetingForAdUnitCode(adUnits[i].code);
+	  		if(typeof targeting !== "undefined"){
+	  			if((typeof targeting['hb_pb'] !== "undefined") && (typeof targeting['hb_bidder'] !== "undefined")){
+	  				OX_qzy[i].addVariable(targeting['hb_bidder']+adUnits[i].code.toLowerCase(), targeting['hb_pb']);	
+	  				console.log('Setting up targeting '+targeting['hb_bidder']+adUnits[i].code.toLowerCase()+' with value '+targeting['hb_pb']);
+	  			}
+	  			if(typeof targeting['hb_adid'] !== "undefined"){
+	  				OX_qzy[i].addVariable("adid_"+adUnits[i].code.toLowerCase(), targeting['hb_adid']);	
+	  				console.log('Setting up targeting adid_'+adUnits[i].code.toLowerCase()+' with value '+targeting['hb_adid']);
+	  			}	  			
+	  		} else { console.log('No targeting set for '+adUnits[i].code.toLowerCase());}
+	  		OX_qzy[i].load();
+        }
+
+        pbjs.initAdserverSet = true;
+};
+
+setTimeout(initAdserver, PREBID_TIMEOUT);
+
+pbjs.que.push(function() {
+    pbjs.addAdUnits(adUnits);
+    pbjs.setBidderSequence('random');
+    // Prebid Settings
+    pbjs.bidderSettings = {
+        standard: {
+            adserverTargeting: [{
+                key: "hb_bidder",
+                val: function(bidResponse) {
+                    return bidResponse.bidderCode;
+                }
+            }, {
+                key: "hb_adid",
+                val: function(bidResponse) {
+                    return bidResponse.adId;
+                }
+            }, {
+                key: "hb_pb",
+                val: function(bidResponse) {
+                    //if(bidResponse.cpm >= 50) return '50.00';
+                    return bidResponse.pbHg;
+                }
+            }]
+        },
+        defymedia: {
+            bidCpmAdjustment: function(bidCpm) {
+                return bidCpm * 0.75;
+            }
+        },
+        rubicon: {
+            bidCpmAdjustment: function(bidCpm) {
+                return bidCpm * 0.75;
+            }
+        }
+    };
+    pbjs.requestBids({
+        bidsBackHandler: function(bidResponses) {
+            initAdserver();
+        },
+        timeout: PREBID_TIMEOUT
+    })
+});
+</script>
+<!-- Header Bidding END -->

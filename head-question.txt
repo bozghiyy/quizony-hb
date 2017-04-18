@@ -1,0 +1,317 @@
+<!-- Header Bidding START -->
+<script type="text/javascript" src="/static/js/ad/prebid.min.js" async></script>
+<script type="text/javascript" src="//quizony-d.openx.net/w/1.0/jstag"></script>
+<script type="text/javascript" >
+var PREBID_TIMEOUT = 2000;
+
+var pbjs = pbjs || {};
+pbjs.que = pbjs.que || [];
+var adUnits = adUnits || [];
+var OX_qzy = OX_qzy || [];
+var width = window.innerWidth || document.documentElement.clientWidth;
+
+if(DeviceType.isDesktop()){
+   /***
+   *  Desktop Adunits
+   ***/
+   if (width > 750){
+        adUnits.push({ //Quizony_Desktop_300x250_ATF_A
+                        code:"QzD3x6A",
+                        oxId:"538684871",
+                        sizes:[[300,250],[300,600]],
+                        bids:[
+                                {bidder:"defymedia",params:{placementId:"10845382"}},
+                                {bidder: 'index',params: {id: "3",siteID: 190344}},
+                                {bidder:"districtm",params:{id:"142224"}},
+                                {bidder: "aol",params: {placement: "4478755",network: "10668.1"}},
+                                {bidder: 'sovrn', params: {tagid: '435032'}},
+                                {bidder: 'sovrn', params: {tagid: '435033'}},
+			  					{bidder:"appnexus",params:{placementId:"10925488"}},
+			  					{bidder:"sekindo",params:{placementId:"11089404"}},
+			  					{bidder:"sekindo",params:{placementId:"11089405"}}
+                            ]
+                    });
+    }
+
+	adUnits.push({ //Quizony_Desktop_300x250_ATF_B
+			  		code:"QzD3x6B",
+			  		oxId:"538684872",
+			  		sizes:[[300,250],[300,600]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851153"}},
+			  				{bidder: 'index',params: {id: "4",siteID: 190345}},
+			  				{bidder:"districtm",params:{id:"142225"}},
+			  				{bidder: "aol",params: {placement: "4478757",network: "10668.1"}},
+			  				{bidder: 'sovrn', params: {tagid: '435034'}},
+			  				{bidder: 'sovrn', params: {tagid: '435035'}},
+			  				{bidder:"appnexus",params:{placementId:"10925489"}},
+			  				{bidder:"sekindo",params:{placementId:"11089409"}},
+			  				{bidder:"sekindo",params:{placementId:"11089408"}}
+			  			]
+	  		});
+	adUnits.push({ //Quizony_Desktop_300x250_C
+			  		code:"QzD3x2C",
+			  		oxId:"538684906",
+			  		sizes:[[300,250]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851154"}},
+			  				{bidder: 'index',params: {id: "5",siteID: 190346}},
+			  				{bidder:"districtm",params:{id:"142226"}},
+			  				{bidder: "aol",params: {placement: "4478758",network: "10668.1"}},
+			  				{bidder: 'sovrn', params: {tagid: '435036'}},
+			  				{bidder:"appnexus",params:{placementId:"10925490"}},
+			  				{bidder:"sekindo",params:{placementId:"11089410"}}
+			  			]
+	  			});
+
+	adUnits.push({ //Quizony_Desktop_300x250_D
+			  		code:"QzD3x2D",
+			  		oxId:"538684907",
+			  		sizes:[[300,250]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851155"}},
+			  				{bidder: 'index',params: {id: "6",siteID: 190347}},
+			  				{bidder:"districtm",params:{id:"142227"}},
+			  				{bidder: "aol",params: {placement: "4478754",network: "10668.1"}},
+			  				{bidder: 'sovrn', params: {tagid: '435037'}},
+			  				{bidder:"appnexus",params:{placementId:"10925491"}},
+			  				{bidder:"sekindo",params:{placementId:"11090393"}}
+			  			]
+	  		});
+	adUnits.push({ //Quizony_Desktop_728x90_A
+			  		code:"QzD7x9A",
+			  		oxId:"538684854",
+			  		sizes:[[728,90]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851149"}},
+			  				{bidder: 'index',params: {id: "1",siteID: 190342}},
+			  				{bidder:"districtm",params:{id:"142222"}},
+			  				{bidder: "aol",params: {placement: "4478756",network: "10668.1"}},
+			  				{bidder: 'sovrn', params: {tagid: '435030'}},
+			  				{bidder:"appnexus",params:{placementId:"10925486"}},
+			  				{bidder:"sekindo",params:{placementId:"11089403"}}
+			  			]
+	  			});
+
+	adUnits.push({ //Quizony_Desktop_728x90_B
+			  		code:"QzD7x9B",
+			  		oxId:"538684869",
+			  		sizes:[[728,90]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851150"}},
+			  				{bidder: 'index',params: {id: "2",siteID: 190343}},
+			  				{bidder:"districtm",params:{id:"142223"}},
+			  				{bidder: "aol",params: {placement: "4478759",network: "10668.1"}},
+			  				{bidder: 'sovrn', params: {tagid: '435031'}},
+			  				{bidder:"appnexus",params:{placementId:"10925487"}},
+			  				{bidder:"sekindo",params:{placementId:"11089407"}}
+			  			]
+	  		});
+
+} else if(DeviceType.isIOS()) {
+	/***
+	*	iOS Adunits
+	***/
+	adUnits.push({ //Quizony_iOS_300x250_A
+			  		code:"QzMi3x2A",
+			  		oxId:"538684929",
+			  		sizes:[[300,250]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851180"}},
+			  				{bidder: 'index',params: {id: "15",siteID: 190356}},
+			  				{bidder:"districtm",params:{id:"142236"}},
+			  				{bidder: "aol",params: {placement: "4478765",network: "10668.1"}},
+			  				{bidder: 'sovrn', params: {tagid: '435046'}},
+			  				{bidder:"appnexus",params:{placementId:"10925500"}},
+			  				{bidder:"sekindo",params:{placementId:"11089419"}}
+			  			]
+	  		});
+	adUnits.push({ //Quizony_iOS_300x250_B
+			  		code:"QzMi3x2B",
+			  		oxId:"538684930",
+			  		sizes:[[300,250]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851181"}},
+			  				{bidder: 'index',params: {id: "16",siteID: 190357}},
+			  				{bidder:"districtm",params:{id:"142237"}},
+			  				{bidder: "aol",params: {placement: "4478763",network: "10668.1"}},
+			  				{bidder: 'sovrn', params: {tagid: '435047'}},
+			  				{bidder:"appnexus",params:{placementId:"10925501"}},
+			  				{bidder:"sekindo",params:{placementId:"11089413"}}
+			  			]
+	  		});
+	adUnits.push({ //Quizony_iOS_300x250_F
+			  		code:"QzMi3x2F",
+			  		oxId:"538684934",
+			  		sizes:[[300,250]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851193"}},
+			  				{bidder: 'index',params: {id: "20",siteID: 190361}},
+			  				{bidder:"districtm",params:{id:"142241"}},
+			  				{bidder: "aol",params: {placement: "4478773",network: "10668.1"}},
+			  				{bidder: 'sovrn', params: {tagid: '435051'}},
+			  				{bidder:"appnexus",params:{placementId:"10925505"}},
+			  				{bidder:"sekindo",params:{placementId:"11089424"}}
+			  			]
+	  		});
+} else if(DeviceType.isAndroid()){
+	/***
+	*	Android Adunits
+	***/
+	adUnits.push({ //Quizony_Android_300x250_A
+			  		code:"QzMa3x2A",
+			  		oxId:"538684911",
+			  		sizes:[[300,250]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851160"}},
+			  				{bidder: 'index',params: {id: "9",siteID: 190350}},
+			  				{bidder:"districtm",params:{id:"142230"}},
+			  				{bidder: "aol",params: {placement: "4478762",network: "10668.1"}},
+			  				{bidder: 'sovrn', params: {tagid: '435040'}},
+			  				{bidder:"appnexus",params:{placementId:"10925494"}},
+			  				{bidder:"sekindo",params:{placementId:"11089406"}}
+			  			]
+	  		});
+	adUnits.push({ //Quizony_Android_300x250_B
+			  		code:"QzMa3x2B",
+			  		oxId:"538684922",
+			  		sizes:[[300,250]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851161"}},
+			  				{bidder: 'index',params: {id: "10",siteID: 190351}},
+			  				{bidder:"districtm",params:{id:"142231"}},
+			  				{bidder: "aol",params: {placement: "4478766",network: "10668.1"}},
+			  				{bidder: 'sovrn', params: {tagid: '435041'}},
+			  				{bidder:"appnexus",params:{placementId:"10925495"}},
+			  				{bidder:"sekindo",params:{placementId:"11089414"}}
+			  			]
+	  		});
+	adUnits.push({ //Quizony_Android_300x250_C
+			  		code:"QzMa3x2C",
+			  		oxId:"538684923",
+			  		sizes:[[300,250]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851166"}},
+			  				{bidder: 'index',params: {id: "11",siteID: 190352}},
+			  				{bidder:"districtm",params:{id:"142232"}},
+			  				{bidder: "aol",params: {placement: "4478771",network: "10668.1"}},
+			  				{bidder: 'sovrn', params: {tagid: '435042'}},
+			  				{bidder:"appnexus",params:{placementId:"10925496"}},
+			  				{bidder:"sekindo",params:{placementId:"11089415"}}
+			  			]
+	  		});
+	adUnits.push({ //Quizony_Android_300x250_D
+			  		code:"QzMa3x2D",
+			  		oxId:"538684924",
+			  		sizes:[[300,250]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851167"}},
+			  				{bidder: 'index',params: {id: "12",siteID: 190353}},
+			  				{bidder:"districtm",params:{id:"142233"}},
+			  				{bidder: "aol",params: {placement: "4478768",network: "10668.1"}},
+			  				{bidder: 'sovrn', params: {tagid: '435043'}},
+			  				{bidder:"appnexus",params:{placementId:"10925497"}},
+			  				{bidder:"sekindo",params:{placementId:"11089416"}}
+			  			]
+	  		});
+	adUnits.push({ //Quizony_Android_300x250_E
+			  		code:"QzMa3x2E",
+			  		oxId:"538684927",
+			  		sizes:[[300,250]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851168"}},
+			  				{bidder: 'index',params: {id: "13",siteID: 190354}},
+			  				{bidder:"districtm",params:{id:"142234"}},
+			  				{bidder: "aol",params: {placement: "4478764",network: "10668.1"}},
+			  				{bidder: 'sovrn', params: {tagid: '435044'}},
+			  				{bidder:"appnexus",params:{placementId:"10925498"}},
+			  				{bidder:"sekindo",params:{placementId:"11089417"}}
+			  			]
+	  		});
+	adUnits.push({ //Quizony_Android_300x250_F
+			  		code:"QzMa3x2F",
+			  		oxId:"538684928",
+			  		sizes:[[300,250]],
+			  		bids:[
+			  				{bidder:"defymedia",params:{placementId:"10851169"}},
+			  				{bidder: 'index',params: {id: "14",siteID: 190355}},
+			  				{bidder:"districtm",params:{id:"142235"}},
+			  				{bidder: "aol",params: {placement: "4478770",network: "10668.1"}},
+			  				{bidder: 'sovrn', params: {tagid: '435045'}},
+			  				{bidder:"appnexus",params:{placementId:"10925499"}},
+			  				{bidder:"sekindo",params:{placementId:"11089418"}}
+			  			]
+	  		});
+}
+
+function initAdserver() {
+        if (pbjs.initAdserverSet) return;
+
+        for (var i = 0, len = adUnits.length; i < len; i++) {
+        	OX_qzy[i] = OX();
+	        OX_qzy[i].addAdUnit(adUnits[i].oxId);
+	  		OX_qzy[i].setAdUnitSlotId(adUnits[i].oxId,adUnits[i].code);
+	  		var targeting = pbjs.getAdserverTargetingForAdUnitCode(adUnits[i].code);
+	  		if(typeof targeting !== "undefined"){
+	  			if((typeof targeting['hb_pb'] !== "undefined") && (typeof targeting['hb_bidder'] !== "undefined")){
+	  				OX_qzy[i].addVariable(targeting['hb_bidder']+adUnits[i].code.toLowerCase(), targeting['hb_pb']);
+	  				console.log('Setting up targeting '+targeting['hb_bidder']+adUnits[i].code.toLowerCase()+' with value '+targeting['hb_pb']);
+	  			}
+	  			if(typeof targeting['hb_adid'] !== "undefined"){
+	  				OX_qzy[i].addVariable("adid_"+adUnits[i].code.toLowerCase(), targeting['hb_adid']);
+	  				console.log('Setting up targeting adid_'+adUnits[i].code.toLowerCase()+' with value '+targeting['hb_adid']);
+	  			}
+	  		} else { console.log('No targeting set for '+adUnits[i].code.toLowerCase());}
+	  		OX_qzy[i].load();
+        }
+
+        pbjs.initAdserverSet = true;
+};
+
+setTimeout(initAdserver, PREBID_TIMEOUT);
+
+pbjs.que.push(function() {
+    pbjs.addAdUnits(adUnits);
+    pbjs.setBidderSequence('random');
+    // Prebid Settings
+    pbjs.bidderSettings = {
+        standard: {
+            adserverTargeting: [{
+                key: "hb_bidder",
+                val: function(bidResponse) {
+                    return bidResponse.bidderCode;
+                }
+            }, {
+                key: "hb_adid",
+                val: function(bidResponse) {
+                    return bidResponse.adId;
+                }
+            }, {
+                key: "hb_pb",
+                val: function(bidResponse) {
+                    //if(bidResponse.cpm >= 50) return '50.00';
+                    return bidResponse.pbHg;
+                }
+            }]
+        },
+        defymedia: {
+            bidCpmAdjustment: function(bidCpm) {
+                return bidCpm * 0.75;
+            }
+        },
+        rubicon: {
+            bidCpmAdjustment: function(bidCpm) {
+                return bidCpm * 0.75;
+            }
+        }
+    };
+    pbjs.requestBids({
+        bidsBackHandler: function(bidResponses) {
+            initAdserver();
+        },
+        timeout: PREBID_TIMEOUT
+    })
+});
+</script>
+<!-- Header Bidding END -->
+

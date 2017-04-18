@@ -1,0 +1,117 @@
+
+<html>
+<head>
+<script type="text/javascript" src="prebid.min.js" async></script>
+<script type="text/javascript" src="//quizony-d.openx.net/w/1.0/jstag"></script>
+<script type="text/javascript" >
+var PREBID_TIMEOUT = 2000;
+
+var pbjs = pbjs || {};
+pbjs.que = pbjs.que || [];
+var adUnits = adUnits || [];
+var OX_qzy = OX_qzy || [];
+
+/*
+Bidder Names:
+index
+defymedia
+rubicon
+komoona
+pubgalaxy
+sovrn
+conversant
+*/
+adUnits.push({
+		  		code:"QzD3x2A",
+		  		oxId:"538684911",
+		  		sizes:[[728,90]],
+		  		bids:[
+		  				{bidder:"defymedia",params:{placementId:"9436147"}}
+		  			]
+  			});
+
+adUnits.push({
+		  		code:"QzD3x2B",
+		  		oxId:"538684937",
+		  		sizes:[[728,90]],
+		  		bids:[
+		  				{bidder:"defymedia",params:{placementId:"9436147"}}
+		  			]
+  		});
+
+function initAdserver() {
+        if (pbjs.initAdserverSet) return;
+
+        for (var i = 0, len = adUnits.length; i < len; i++) {
+        	OX_qzy[i] = OX();
+	        OX_qzy[i].addAdUnit(adUnits[i].oxId);
+	  		OX_qzy[i].setAdUnitSlotId(adUnits[i].oxId,adUnits[i].code);
+	  		var targeting = pbjs.getAdserverTargetingForAdUnitCode(adUnits[i].code);
+	  		if(typeof targeting !== "undefined"){
+	  			if((typeof targeting['hb_pb'] !== "undefined") && (typeof targeting['hb_bidder'] !== "undefined")){
+	  				OX_qzy[i].addVariable(targeting['hb_bidder']+adUnits[i].code, targeting['hb_pb']);	
+	  				console.log('Setting up targeting '+targeting['hb_bidder']+adUnits[i].code+' with value '+targeting['hb_pb']);
+	  			}
+	  			if(typeof targeting['hb_adid'] !== "undefined"){
+	  				OX_qzy[i].addVariable("adid_"+adUnits[i].code, targeting['hb_adid']);	
+	  				console.log('Setting up targeting adid_'+adUnits[i].code+' with value '+targeting['hb_adid']);
+	  			}	  			
+	  		} else { console.log('No targeting set for '+adUnits[i].code);}
+	  		OX_qzy[i].load();
+        }
+
+        pbjs.initAdserverSet = true;
+};
+
+setTimeout(initAdserver, PREBID_TIMEOUT);
+
+pbjs.que.push(function() {
+    pbjs.addAdUnits(adUnits);
+    pbjs.setBidderSequence('random');
+    // Prebid Settings
+    pbjs.bidderSettings = {
+        standard: {
+            adserverTargeting: [{
+                key: "hb_bidder",
+                val: function(bidResponse) {
+                    return bidResponse.bidderCode;
+                }
+            }, {
+                key: "hb_adid",
+                val: function(bidResponse) {
+                    return bidResponse.adId;
+                }
+            }, {
+                key: "hb_pb",
+                val: function(bidResponse) {
+                    if(bidResponse.cpm >= 50) return '50.00';
+                    return bidResponse.pbHg;
+                }
+            }]
+        },
+        defymedia: {
+            bidCpmAdjustment: function(bidCpm) {
+                return bidCpm * .80;
+            }
+        }
+    };
+    pbjs.requestBids({
+        bidsBackHandler: function(bidResponses) {
+            initAdserver();
+        },
+        timeout: PREBID_TIMEOUT
+    })
+});
+</script>
+
+</head>
+<body>
+<div id="QzD3x2A"></div>
+<div id="QzD3x2B"></div>
+
+
+
+
+
+
+</body>

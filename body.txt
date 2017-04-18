@@ -1,0 +1,61 @@
+<!-- Quizony_Desktop_300x250_ATF_A -->
+<div id="QzD3x6A"></div>
+
+<!-- Quizony_Desktop_300x250_ATF_B -->
+<div id="QzD3x6B"></div>
+
+<!-- Quizony_Desktop_300x250_C -->
+<div id="QzD3x2C"></div>
+
+<!-- Quizony_Desktop_300x250_D -->
+<div id="QzD3x2D"></div>
+
+<!-- Quizony_Desktop_728x90_A -->
+<div id="QzD7x9A"></div>
+
+<!-- Quizony_Desktop_728x90_B -->
+<div id="QzD7x9B"></div>
+
+<!-- Quizony_Desktop_Results_A -->
+<div id="QzD3x2A"></div>
+
+<!-- Quizony_Desktop_Results_B -->
+<div id="QzD3x2B"></div>
+
+
+<!-- Quizony_iOS_300x250_A -->
+<div id="QzMi3x2A"></div>
+
+<!-- Quizony_iOS_300x250_B -->
+<div id="QzMi3x2B"></div>
+
+<!-- Quizony_iOS_300x250_C -->
+<div id="QzMi3x2C"></div>
+
+<!-- Quizony_iOS_300x250_D -->
+<div id="QzMi3x2D"></div>
+
+<!-- Quizony_iOS_300x250_E -->
+<div id="QzMi3x2E"></div>
+
+<!-- Quizony_iOS_300x250_F -->
+<div id="QzMi3x2F"></div>
+
+
+<!-- Quizony_Android_300x250_A -->
+<div id="QzMa3x2A"></div>
+
+<!-- Quizony_Android_300x250_B -->
+<div id="QzMa3x2B"></div>
+
+<!-- Quizony_Android_300x250_C -->
+<div id="QzMa3x2C"></div>
+
+<!-- Quizony_Android_300x250_D -->
+<div id="QzMa3x2D"></div>
+
+<!-- Quizony_Android_300x250_E -->
+<div id="QzMa3x2E"></div>
+
+<!-- Quizony_Android_300x250_F -->
+<div id="QzMa3x2F"></div>
