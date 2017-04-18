@@ -115,8 +115,7 @@ if(DeviceType.isDesktop()){
 			  				{bidder:"districtm",params:{id:"142236"}},
 			  				{bidder: "aol",params: {placement: "4478765",network: "10668.1"}},
 			  				{bidder: 'sovrn', params: {tagid: '435046'}},
-			  				{bidder:"appnexus",params:{placementId:"10925500"}},
-			  				{bidder:"sekindo",params:{placementId:"11089419"}}
+			  				{bidder:"appnexus",params:{placementId:"10925500"}}
 			  			]
 	  		});
 	adUnits.push({ //Quizony_iOS_300x250_B
@@ -129,8 +128,7 @@ if(DeviceType.isDesktop()){
 			  				{bidder:"districtm",params:{id:"142237"}},
 			  				{bidder: "aol",params: {placement: "4478763",network: "10668.1"}},
 			  				{bidder: 'sovrn', params: {tagid: '435047'}},
-			  				{bidder:"appnexus",params:{placementId:"10925501"}},
-			  				{bidder:"sekindo",params:{placementId:"11089413"}}
+			  				{bidder:"appnexus",params:{placementId:"10925501"}}
 			  			]
 	  		});
 	adUnits.push({ //Quizony_iOS_300x250_F
@@ -143,8 +141,7 @@ if(DeviceType.isDesktop()){
 			  				{bidder:"districtm",params:{id:"142241"}},
 			  				{bidder: "aol",params: {placement: "4478773",network: "10668.1"}},
 			  				{bidder: 'sovrn', params: {tagid: '435051'}},
-			  				{bidder:"appnexus",params:{placementId:"10925505"}},
-			  				{bidder:"sekindo",params:{placementId:"11089424"}}
+			  				{bidder:"appnexus",params:{placementId:"10925505"}}
 			  			]
 	  		});
 } else if(DeviceType.isAndroid()){
@@ -161,8 +158,7 @@ if(DeviceType.isDesktop()){
 			  				{bidder:"districtm",params:{id:"142231"}},
 			  				{bidder: "aol",params: {placement: "4478766",network: "10668.1"}},
 			  				{bidder: 'sovrn', params: {tagid: '435041'}},
-			  				{bidder:"appnexus",params:{placementId:"10925495"}},
-			  				{bidder:"sekindo",params:{placementId:"11089414"}}
+			  				{bidder:"appnexus",params:{placementId:"10925495"}}
 			  			]
 	  		});
 	adUnits.push({ //Quizony_Android_300x250_C
@@ -175,8 +171,7 @@ if(DeviceType.isDesktop()){
 			  				{bidder:"districtm",params:{id:"142232"}},
 			  				{bidder: "aol",params: {placement: "4478771",network: "10668.1"}},
 			  				{bidder: 'sovrn', params: {tagid: '435042'}},
-			  				{bidder:"appnexus",params:{placementId:"10925496"}},
-			  				{bidder:"sekindo",params:{placementId:"11089415"}}
+			  				{bidder:"appnexus",params:{placementId:"10925496"}}
 			  			]
 	  		});
 	adUnits.push({ //Quizony_Android_300x250_D
@@ -189,8 +184,7 @@ if(DeviceType.isDesktop()){
 			  				{bidder:"districtm",params:{id:"142233"}},
 			  				{bidder: "aol",params: {placement: "4478768",network: "10668.1"}},
 			  				{bidder: 'sovrn', params: {tagid: '435043'}},
-			  				{bidder:"appnexus",params:{placementId:"10925497"}},
-			  				{bidder:"sekindo",params:{placementId:"11089416"}}
+			  				{bidder:"appnexus",params:{placementId:"10925497"}}
 			  			]
 	  		});
 	adUnits.push({ //Quizony_Android_300x250_E
@@ -203,8 +197,7 @@ if(DeviceType.isDesktop()){
 			  				{bidder:"districtm",params:{id:"142234"}},
 			  				{bidder: "aol",params: {placement: "4478764",network: "10668.1"}},
 			  				{bidder: 'sovrn', params: {tagid: '435044'}},
-			  				{bidder:"appnexus",params:{placementId:"10925498"}},
-			  				{bidder:"sekindo",params:{placementId:"11089417"}}
+			  				{bidder:"appnexus",params:{placementId:"10925498"}}
 			  			]
 	  		});
 }
@@ -265,6 +258,11 @@ pbjs.que.push(function() {
             }
         },
         rubicon: {
+            bidCpmAdjustment: function(bidCpm) {
+                return bidCpm * 0.75;
+            }
+        },
+        sekindo: {
             bidCpmAdjustment: function(bidCpm) {
                 return bidCpm * 0.75;
             }
