@@ -1,6 +1,6 @@
 <!-- Header Bidding START -->
 <script type="text/javascript" src="/static/js/ad/prebid.min.js" async></script>
-<script type="text/javascript" src="//quizony-d.openx.net/w/1.0/jstag"></script>
+<script async type="text/javascript" async src="//quizony-d.openx.net/w/1.0/jstag"></script>
 <script type="text/javascript" >
 var PREBID_TIMEOUT = 2000;
 
@@ -339,6 +339,16 @@ pbjs.que.push(function () {
 });
 
 function initAdserver() {
+		if (typeof OX != 'function'){ 
+		  console.log('OpenX is not ready yet');
+          setTimeout(initAdserver, 100); // postpone adserver call
+          return;
+        }
+		if (!pbjs.allBidsAvailable){ 
+		  console.log('Prebid didn`t finish the auction');
+          setTimeout(initAdserver, 100); // postpone adserver call
+          return;
+        }
         if (pbjs.initAdserverSet) return;
 
         var hbCPMSumCookie = readCookie("hbCPMSum");
