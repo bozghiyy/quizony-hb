@@ -1,61 +1,61 @@
 <!-- Quizony_Desktop_300x250_ATF_A -->
-<div id="QzD3x6A"></div>
+<div id="QzD3x6A" adonis-marker data-pan-sizes='[[300,250],[300,600]]'></div>
 
 <!-- Quizony_Desktop_300x250_ATF_B -->
-<div id="QzD3x6B"></div>
+<div id="QzD3x6B" adonis-marker data-pan-sizes='[[300,250],[300,600]]'></div>
 
 <!-- Quizony_Desktop_300x250_C -->
-<div id="QzD3x2C"></div>
+<div id="QzD3x2C" adonis-marker data-pan-sizes='[[300,250]]'></div>
 
 <!-- Quizony_Desktop_300x250_D -->
-<div id="QzD3x2D"></div>
+<div id="QzD3x2D" adonis-marker data-pan-sizes='[[300,250]]'></div>
 
 <!-- Quizony_Desktop_728x90_A -->
-<div id="QzD7x9A"></div>
+<div id="QzD7x9A" adonis-marker data-pan-sizes='[[728,90]]'></div>
 
 <!-- Quizony_Desktop_728x90_B -->
-<div id="QzD7x9B"></div>
+<div id="QzD7x9B" adonis-marker data-pan-sizes='[[728,90]]'></div>
 
 <!-- Quizony_Desktop_Results_A -->
-<div id="QzD3x2A"></div>
+<div id="QzD3x2A" adonis-marker data-pan-sizes='[[300,250]]'></div>
 
 <!-- Quizony_Desktop_Results_B -->
-<div id="QzD3x2B"></div>
+<div id="QzD3x2B" adonis-marker data-pan-sizes='[[300,250]]'></div>
 
 
 <!-- Quizony_iOS_300x250_A -->
-<div id="QzMi3x2A"></div>
+<div id="QzMi3x2A" adonis-marker data-pan-sizes='[[300,250]]'></div>
 
 <!-- Quizony_iOS_300x250_B -->
-<div id="QzMi3x2B"></div>
+<div id="QzMi3x2B" adonis-marker data-pan-sizes='[[300,250]]'></div>
 
 <!-- Quizony_iOS_300x250_C -->
-<div id="QzMi3x2C"></div>
+<div id="QzMi3x2C" adonis-marker data-pan-sizes='[[300,250]]'></div>
 
 <!-- Quizony_iOS_300x250_D -->
-<div id="QzMi3x2D"></div>
+<div id="QzMi3x2D" adonis-marker data-pan-sizes='[[300,250]]'></div>
 
 <!-- Quizony_iOS_300x250_E -->
-<div id="QzMi3x2E"></div>
+<div id="QzMi3x2E" adonis-marker data-pan-sizes='[[300,250]]'></div>
 
 <!-- Quizony_iOS_300x250_F -->
-<div id="QzMi3x2F"></div>
+<div id="QzMi3x2F" adonis-marker data-pan-sizes='[[300,250]]'></div>
 
 
 <!-- Quizony_Android_300x250_A -->
-<div id="QzMa3x2A"></div>
+<div id="QzMa3x2A" adonis-marker data-pan-sizes='[[300,250]]'></div>
 
 <!-- Quizony_Android_300x250_B -->
-<div id="QzMa3x2B"></div>
+<div id="QzMa3x2B" adonis-marker data-pan-sizes='[[300,250]]'></div>
 
 <!-- Quizony_Android_300x250_C -->
-<div id="QzMa3x2C"></div>
+<div id="QzMa3x2C" adonis-marker data-pan-sizes='[[300,250]]'></div>
 
 <!-- Quizony_Android_300x250_D -->
-<div id="QzMa3x2D"></div>
+<div id="QzMa3x2D" adonis-marker data-pan-sizes='[[300,250]]'></div>
 
 <!-- Quizony_Android_300x250_E -->
-<div id="QzMa3x2E"></div>
+<div id="QzMa3x2E" adonis-marker data-pan-sizes='[[300,250]]'></div>
 
 <!-- Quizony_Android_300x250_F -->
-<div id="QzMa3x2F"></div>
+<div id="QzMa3x2F" adonis-marker data-pan-sizes='[[300,250]]'></div>

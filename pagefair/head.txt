@@ -1,0 +1,7 @@
+<!-- PageFair START -->
+<script type="text/javascript">
+        var adonis = adonis || {};
+        adonis.transport = 'https://uy81rb.wraug5vv72b28fch.pro/http';
+        adonis.conditionalAdRendering = true;
+</script>
+<!-- PageFair END -->
