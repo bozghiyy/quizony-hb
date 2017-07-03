@@ -428,6 +428,25 @@ function readCookie(name) {
     return null;
 }
 
+function getQuizOXCategory() {
+    if (document.location.href) {
+        var regex = /(\w+)(\.\w+)+(?!.*(\w+)(\.\w+)+)/g;
+	var category = regex.exec(document.location.href);
+	var OXCat = "";
+	if(typeof category !== 'undefined')
+	{
+		if(category[1]  == "index") OXCat = "30";
+	
+		else if(category[1]  == "result") OXCat = "31";
+	
+		else if(/^\d+$/.test(category[1])) OXCat = category[1];
+	}
+	return OXCat;
+    }
+
+    return "";
+}
+
 pbjs.que.push(function () {
 		pbjs.enableAnalytics({
 				provider: 'roxot',
@@ -484,6 +503,9 @@ function initAdserver() {
                 OX_qzy[i].addVariable("campaign", campaign);
                 console.log("Setting up var: campaign to: " + campaign);
             }
+
+            OX_qzy[i].addContentTopic(getQuizOXCategory());
+
 	  		OX_qzy[i].load();
         }
 
