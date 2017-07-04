@@ -510,6 +510,10 @@ pbjs.que.push(function() {
         },
         defymedia: {
             bidCpmAdjustment: function(bidCpm) {
+            	// Discrepancy
+            	if(DeviceType.isDesktop()) {bidCpm = bidCpm * 0.91;}
+            	if(DeviceType.isIOS()) {bidCpm = bidCpm * 1.05;}
+            	if(DeviceType.isAndroid()) {bidCpm = bidCpm * 1.05;}
                 return bidCpm * 0.75;
             }
         },
@@ -520,6 +524,26 @@ pbjs.que.push(function() {
         },
         sekindo: {
             bidCpmAdjustment: function(bidCpm) {
+            	// Discrepancy
+            	if(DeviceType.isDesktop()) {bidCpm = bidCpm * 0.82;}
+                return bidCpm * 0.75;
+            }
+        },
+        districtm: {
+            bidCpmAdjustment: function(bidCpm) {
+            	// Discrepancy
+            	if(DeviceType.isDesktop()) {bidCpm = bidCpm * 0.75;}
+            	if(DeviceType.isIOS()) {bidCpm = bidCpm * 0.83;}
+            	if(DeviceType.isAndroid()) {bidCpm = bidCpm * 0.83;}
+                return bidCpm * 0.75;
+            }
+        },
+        aol: {
+            bidCpmAdjustment: function(bidCpm) {
+            	// Discrepancy
+            	if(DeviceType.isDesktop()) {bidCpm = bidCpm * 1.20;}
+            	if(DeviceType.isIOS()) {bidCpm = bidCpm * 1.25;}
+            	if(DeviceType.isAndroid()) {bidCpm = bidCpm * 1;}
                 return bidCpm * 0.75;
             }
         }
