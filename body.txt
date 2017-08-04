@@ -22,7 +22,6 @@
 <!-- Quizony_Desktop_Results_B -->
 <div id="QzD3x2B" adonis-marker data-pan-sizes='[[300,250]]'></div>
 
-
 <!-- Quizony_iOS_300x250_A -->
 <div id="QzMi3x2A" adonis-marker data-pan-sizes='[[300,250]]'></div>
 
