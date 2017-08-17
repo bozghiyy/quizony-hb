@@ -94,7 +94,7 @@ if(DeviceType.isDesktop()){
 			  				{bidder:"defymedia",params:{placementId:"10851149"}},
 			  				{bidder: 'index',params: {id: "1",siteID: 190342}},
 			  				{bidder:"districtm",params:{id:"142222"}},
-			  				{bidder: "aol",params: {placement: "4478756",network: "10668.1"}},
+I			  				{bidder: "aol",params: {placement: "4478756",network: "10668.1"}},
 			  				{bidder: 'sovrn', params: {tagid: '435030'}},
 			  				{bidder:"appnexus",params:{placementId:"10925486"}},
 			  				{bidder:"sekindo",params:{placementId:"11089403"}},
