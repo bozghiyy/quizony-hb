@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<script type="text/javascript" > var adsStart = (new Date()).getTime(); </script>
 <title>Are You A Cat Or Dog Person? - Quiz - Quizony.com</title>
 
 <script>
@@ -105,7 +105,7 @@ var _0x24b9=["\x69\x73\x41\x6E\x64\x72\x6F\x69\x64","\x69\x73\x41\x6E\x64\x72\x6
 
 <!-- Header Bidding START -->
 <script type="text/javascript" src="../prebid.min.js" async></script>
-<script type="text/javascript" src="//quizony-d.openx.net/w/1.0/jstag"></script>
+<script async type="text/javascript" src="//quizony-d.openx.net/w/1.0/jstag"></script>
 <script type="text/javascript" >
 var PREBID_TIMEOUT = 2000;
 
@@ -289,22 +289,6 @@ if(DeviceType.isDesktop()){
 	/***
 	*	Android Adunits
 	***/
-	adUnits.push({ //Quizony_Android_300x250_A
-			  		code:"QzMa3x2A",
-			  		oxId:"538684911",
-			  		sizes:[[300,250]],
-			  		bids:[
-			  				{bidder:"defymedia",params:{placementId:"10851160"}},
-			  				{bidder: 'rubicon',params: {accountId: '15804',siteId: '129724',zoneId: '723962'}},
-			  				{bidder: 'index',params: {id: "9",siteID: 190350}},
-			  				{bidder:"districtm",params:{id:"142230"}},
-			  				{bidder: 'sovrn', params: {tagid: '435040'}},
-			  				{bidder:"appnexus",params:{placementId:"10925494"}},
-			  				{bidder:"conversant",params:{site_id:"112926"}},
-			  				{bidder: 'pulsepoint',params: {cf: '300X250',cp:561306 ,ct: 597777}},
-			  				{bidder: 'rhythmone',params: {placementId: '66907'}}
-			  			]
-	  		});
 	adUnits.push({ //Quizony_Android_300x250_B
 			  		code:"QzMa3x2B",
 			  		oxId:"538684922",
@@ -371,13 +355,23 @@ if(DeviceType.isDesktop()){
 	  		});
 }
 
-function initAdserver() {
+function initAdserver() { 
+		if (typeof OX != 'function'){ 
+		  console.log('OpenX is not ready yet');
+          setTimeout(initAdserver, 100); // postpone adserver call
+          return;
+        }
+		if (!pbjs.allBidsAvailable){ 
+		  console.log('Prebid didn`t finish the auction');
+          setTimeout(initAdserver, 100); // postpone adserver call
+          return;
+        }        
         if (pbjs.initAdserverSet) return;
 
         for (var i = 0, len = adUnits.length; i < len; i++) {
         	OX_qzy[i] = OX();
 	        OX_qzy[i].addAdUnit(adUnits[i].oxId);
-	  		OX_qzy[i].setAdUnitSlotId(adUnits[i].oxId,adUnits[i].code);
+	  		OX_qzy[i].setAdUnitSlotId(adUnits[i].oxId,adUnits[i].code); 
 	  		var targeting = pbjs.getAdserverTargetingForAdUnitCode(adUnits[i].code);
 	  		if(typeof targeting !== "undefined"){
 	  			if((typeof targeting['hb_pb'] !== "undefined") && (typeof targeting['hb_bidder'] !== "undefined")){
@@ -423,11 +417,40 @@ pbjs.que.push(function() {
         },
         defymedia: {
             bidCpmAdjustment: function(bidCpm) {
+            	// Discrepancy
+            	if(DeviceType.isDesktop()) {bidCpm = bidCpm * 0.91;}
+            	if(DeviceType.isIOS()) {bidCpm = bidCpm * 1.05;}
+            	if(DeviceType.isAndroid()) {bidCpm = bidCpm * 1.05;}
                 return bidCpm * 0.75;
             }
         },
         rubicon: {
             bidCpmAdjustment: function(bidCpm) {
+                return bidCpm * 0.75;
+            }
+        },
+        sekindo: {
+            bidCpmAdjustment: function(bidCpm) {
+            	// Discrepancy
+            	if(DeviceType.isDesktop()) {bidCpm = bidCpm * 0.82;}
+                return bidCpm * 0.75;
+            }
+        },
+        districtm: {
+            bidCpmAdjustment: function(bidCpm) {
+            	// Discrepancy
+            	if(DeviceType.isDesktop()) {bidCpm = bidCpm * 0.75;}
+            	if(DeviceType.isIOS()) {bidCpm = bidCpm * 0.83;}
+            	if(DeviceType.isAndroid()) {bidCpm = bidCpm * 0.83;}
+                return bidCpm * 0.75;
+            }
+        },
+        aol: {
+            bidCpmAdjustment: function(bidCpm) {
+            	// Discrepancy
+            	if(DeviceType.isDesktop()) {bidCpm = bidCpm * 1.20;}
+            	if(DeviceType.isIOS()) {bidCpm = bidCpm * 1.25;}
+            	if(DeviceType.isAndroid()) {bidCpm = bidCpm * 1;}
                 return bidCpm * 0.75;
             }
         }
