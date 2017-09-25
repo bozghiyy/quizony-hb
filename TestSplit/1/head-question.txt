@@ -24,6 +24,7 @@ if(DeviceType.isDesktop()){
                                 {bidder: "aol",params: {placement: "4478755",network: "10668.1"}},
                                 {bidder: 'sovrn', params: {tagid: '435032'}},
                                 {bidder: 'sovrn', params: {tagid: '435033'}},
+                                {bidder:"districtm",params:{id:"142224"}},
 			  					{bidder:"appnexus",params:{placementId:"10925488"}},
 			  					{bidder:"sonobi",params:{placement_id:"2d290cd99db6553b372c"}}                            
 			  				]
@@ -39,6 +40,7 @@ if(DeviceType.isDesktop()){
 			  				{bidder: "aol",params: {placement: "4478757",network: "10668.1"}},
 			  				{bidder: 'sovrn', params: {tagid: '435034'}},
 			  				{bidder: 'sovrn', params: {tagid: '435035'}},
+			  				{bidder:"districtm",params:{id:"142225"}},
 			  				{bidder:"appnexus",params:{placementId:"10925489"}},
 			  				{bidder:"sonobi",params:{placement_id:"04562543060dbf0c1f2f"}}			  			
 			  			]
@@ -51,6 +53,7 @@ if(DeviceType.isDesktop()){
 			  				{bidder: 'index',params: {id: "5",siteID: 190346}},
 			  				{bidder: "aol",params: {placement: "4478758",network: "10668.1"}},
 			  				{bidder: 'sovrn', params: {tagid: '435036'}},
+			  				{bidder:"districtm",params:{id:"142226"}},
 			  				{bidder:"appnexus",params:{placementId:"10925490"}},
 			  				{bidder:"sonobi",params:{placement_id:"2407619ab14bdaeffc0e"}}			  			
 			  			]
@@ -64,6 +67,7 @@ if(DeviceType.isDesktop()){
 			  				{bidder: 'index',params: {id: "6",siteID: 190347}},
 			  				{bidder: "aol",params: {placement: "4478754",network: "10668.1"}},
 			  				{bidder: 'sovrn', params: {tagid: '435037'}},
+			  				{bidder:"districtm",params:{id:"142227"}},
 			  				{bidder:"appnexus",params:{placementId:"10925491"}},
 			  				{bidder:"sonobi",params:{placement_id:"6401cc5695d12c830d24"}}			  			
 			  			]
@@ -76,6 +80,7 @@ if(DeviceType.isDesktop()){
 			  				{bidder: 'index',params: {id: "1",siteID: 190342}},
 			  				{bidder: "aol",params: {placement: "4478756",network: "10668.1"}},
 			  				{bidder: 'sovrn', params: {tagid: '435030'}},
+			  				{bidder:"districtm",params:{id:"142222"}},
 			  				{bidder:"appnexus",params:{placementId:"10925486"}},
 			  				{bidder:"sonobi",params:{placement_id:"7229a8f93466d0adf99b"}}			  			
 			  			]
@@ -89,6 +94,7 @@ if(DeviceType.isDesktop()){
 			  				{bidder: 'index',params: {id: "2",siteID: 190343}},
 			  				{bidder: "aol",params: {placement: "4478759",network: "10668.1"}},
 			  				{bidder: 'sovrn', params: {tagid: '435031'}},
+			  				{bidder:"districtm",params:{id:"142223"}},
 			  				{bidder:"appnexus",params:{placementId:"10925487"}},
 			  				{bidder:"sonobi",params:{placement_id:"151b6d220355326f7911"}}			  			
 			  			]
@@ -106,6 +112,7 @@ if(DeviceType.isDesktop()){
 			  				{bidder: 'index',params: {id: "15",siteID: 190356}},
 			  				{bidder: "aol",params: {placement: "4478765",network: "10668.1"}},
 			  				{bidder: 'sovrn', params: {tagid: '435046'}},
+			  				{bidder:"districtm",params:{id:"142236"}},
 			  				{bidder:"appnexus",params:{placementId:"10925500"}},
 			  				{bidder:"sonobi",params:{placement_id:"a2d12cbc5f258f1f447c"}}			  			
 			  			]
@@ -118,6 +125,7 @@ if(DeviceType.isDesktop()){
 			  				{bidder: 'index',params: {id: "16",siteID: 190357}},
 			  				{bidder: "aol",params: {placement: "4478763",network: "10668.1"}},
 			  				{bidder: 'sovrn', params: {tagid: '435047'}},
+			  				{bidder:"districtm",params:{id:"142237"}},
 			  				{bidder:"appnexus",params:{placementId:"10925501"}},
 			  				{bidder:"sonobi",params:{placement_id:"546e9284e29a031bc2a4"}}			  			
 			  			]
@@ -130,6 +138,7 @@ if(DeviceType.isDesktop()){
 			  				{bidder: 'index',params: {id: "20",siteID: 190361}},
 			  				{bidder: "aol",params: {placement: "4478773",network: "10668.1"}},
 			  				{bidder: 'sovrn', params: {tagid: '435051'}},
+			  				{bidder:"districtm",params:{id:"142241"}},
 			  				{bidder:"appnexus",params:{placementId:"10925505"}},
 			  				{bidder:"sonobi",params:{placement_id:"e1e7a8f53a735f8bc74d"}}			  			
 			  			]
@@ -145,6 +154,7 @@ if(DeviceType.isDesktop()){
 			  		bids:[
 			  				{bidder: 'index',params: {id: "9",siteID: 190350}},
 			  				{bidder: 'sovrn', params: {tagid: '435040'}},
+			  				{bidder:"districtm",params:{id:"142230"}},
 			  				{bidder:"appnexus",params:{placementId:"10925494"}},
 			  				{bidder:"sonobi",params:{placement_id:"556c112e6ca4793526f1"}}			  			
 			  			]
@@ -156,6 +166,7 @@ if(DeviceType.isDesktop()){
 			  		bids:[
 			  				{bidder: 'index',params: {id: "10",siteID: 190351}},
 			  				{bidder: 'sovrn', params: {tagid: '435041'}},
+			  				{bidder:"districtm",params:{id:"142231"}},
 			  				{bidder:"appnexus",params:{placementId:"10925495"}},
 			  				{bidder:"sonobi",params:{placement_id:"53b518d5d21bb96d1158"}}			  			
 			  			]
@@ -167,6 +178,7 @@ if(DeviceType.isDesktop()){
 			  		bids:[
 			  				{bidder: 'index',params: {id: "11",siteID: 190352}},
 			  				{bidder: 'sovrn', params: {tagid: '435042'}},
+			  				{bidder:"districtm",params:{id:"142232"}},
 			  				{bidder:"appnexus",params:{placementId:"10925496"}},
 			  				{bidder:"sonobi",params:{placement_id:"368eb5c7976c6968ab0e"}}			  			
 			  			]
@@ -178,6 +190,7 @@ if(DeviceType.isDesktop()){
 			  		bids:[
 			  				{bidder: 'index',params: {id: "12",siteID: 190353}},
 			  				{bidder: 'sovrn', params: {tagid: '435043'}},
+			  				{bidder:"districtm",params:{id:"142233"}},
 			  				{bidder:"appnexus",params:{placementId:"10925497"}},
 			  				{bidder:"sonobi",params:{placement_id:"64a02902c08de837703f"}}			  			
 			  			]
@@ -189,6 +202,7 @@ if(DeviceType.isDesktop()){
 			  		bids:[
 			  				{bidder: 'index',params: {id: "13",siteID: 190354}},
 			  				{bidder: 'sovrn', params: {tagid: '435044'}},
+			  				{bidder:"districtm",params:{id:"142234"}},
 			  				{bidder:"appnexus",params:{placementId:"10925498"}},
 			  				{bidder:"sonobi",params:{placement_id:"4f23566cabc4e42bc1f9"}}			  			
 			  			]
@@ -200,6 +214,7 @@ if(DeviceType.isDesktop()){
 			  		bids:[
 			  				{bidder: 'index',params: {id: "14",siteID: 190355}},
 			  				{bidder: 'sovrn', params: {tagid: '435045'}},
+			  				{bidder:"districtm",params:{id:"142235"}},
 			  				{bidder:"appnexus",params:{placementId:"10925499"}},
 			  				{bidder:"sonobi",params:{placement_id:"0b35fecb883ea5046e37"}}			  			
 			  			]
