@@ -2,3 +2,14 @@
 Prebid.js-0.18.0
 Prebid.js-0.23.1
 OpenXAPI
+
+Prebid.js-0.29.0/*
+!Prebid.js-0.29.0/
+!Prebid.js-0.29.0/adapters.json
+!Prebid.js-0.29.0/analytics.json
+!Prebid.js-0.29.0/modules.json
+!Prebid.js-0.29.0/modules*.json
+!Prebid.js-0.29.0/src/
+!Prebid.js-0.29.0/src/*
+!Prebid.js-0.29.0/modules/
+!Prebid.js-0.29.0/modules/*
