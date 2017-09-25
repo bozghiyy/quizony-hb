@@ -261,7 +261,7 @@ pbjs.que.push(function() {
         },
         rubicon: {
             bidCpmAdjustment: function(bidCpm) {
-                return bidCpm * 0.75;
+                return bidCpm * 0.80;
             }
         },
         sekindo: {
