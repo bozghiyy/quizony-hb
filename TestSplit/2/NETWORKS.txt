@@ -1,4 +1,4 @@
-b1. Appnexus
+1. Appnexus
 2. Index
 3. Sovrn
 4. Pulsepoint
