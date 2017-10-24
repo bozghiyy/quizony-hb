@@ -259,13 +259,6 @@ $$PREBID_GLOBAL$$.allBidsAvailable = function () {
   return bidmanager.bidsBackAll();
 };
 
-
-/**
-confiantWrap
-**/
-function confiantWrap(a,b,c,d,e,f){function g(a){return(l(a)||"")[r]("/","_")[r]("+","-")}function h(b,c,d){var e=v+m(b)+"&d="+c,f="err__"+1*new Date;j[f]=d;var g="<"+p+" on"+s+'="void('+f+'())" '+q+'="'+e+'" type="text/java'+p+'" ></'+p+">";a[u](g)}function i(){var c=g(f+"/"+w.k.hb_bidder[0]+":"+w.k.hb_size[0]),d={wh:c,wd:k.parse(k[t](w)),wr:0};h(c,g(k[t](d)),function(){a[u](b)});var e={d:d,t:b};j[f]={},j[f][c]=e}var j=a.parentWindow||a.defaultView,k=j.JSON,l=j.btoa,m=j.encodeURIComponent;if(!k||!l)return!1;var n="t",o="i",p="script",q="src",r="replace",s="error",t="stringify",u="wr"+o+n+"e",v="https://"+e+"/?wrapper="+m(f)+"&tpid=",w={k:{hb_bidder:[c],hb_size:[d]}};return i(),a.close(),!0}
-
-
 /**
  * This function will render the ad (based on params) in the given iframe document passed through.
  * Note that doc SHOULD NOT be the parent document page as we can't doc.write() asynchronously
@@ -297,23 +290,8 @@ $$PREBID_GLOBAL$$.renderAd = function (doc, id) {
         } else if ((doc === document && !utils.inIframe()) || mediaType === 'video') {
           utils.logError(`Error trying to write ad. Ad render call ad id ${id} was prevented from writing to the main document.`);
         } else if (ad) {
-          var cdnHost = 'clarium.global.ssl.fastly.net';
-          var confiantId = 'tlbG4akTQGworr932-sUK4nJzTQ';
-          if(confiantWrap(doc, ad, bid.bidderCode, width+'x'+height, cdnHost, confiantId))
-          {
-            utils.logInfo('[[[START confiantWrap - debug]]]');
-            utils.logInfo('doc:',doc);
-            utils.logInfo('ad:',ad);
-            utils.logInfo('bidder:',bid.bidderCode);
-            utils.logInfo('size:',width+'x'+height);
-            utils.logInfo('cdnHost:',cdnHost);
-            utils.logInfo('dconfiantIdoc:',confiantId);
-            utils.logInfo('[[[END confiantWrap]]]');
-          } else {
-            utils.logError('confiantWrap returned false falling back to normal render ');
-            doc.write(ad);
-            doc.close();
-          }
+          doc.write(ad);
+          doc.close();
           setRenderSize(doc, width, height);
         } else if (url) {
           const iframe = utils.createInvisibleIframe();
