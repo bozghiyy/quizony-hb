@@ -58,3 +58,6 @@
 
 <!-- Quizony_Android_300x250_F -->
 <div id="QzMa3x2F" adonis-marker data-pan-sizes='[[300,250]]'></div>
+
+<!-- Quizony_1x1 -->
+<div id="QzD1x1"></div>

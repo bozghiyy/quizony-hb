@@ -8,6 +8,7 @@ var pbjs = pbjs || {};
 pbjs.que = pbjs.que || [];
 var adUnits = adUnits || [];
 var OX_qzy = OX_qzy || [];
+var OX_qzyNoHB = [];
 var width = window.innerWidth || document.documentElement.clientWidth;
 
 if(DeviceType.isDesktop()){
@@ -277,6 +278,24 @@ if(DeviceType.isDesktop()){
 	  		});
 }
 
+function loadNonHBAdunits()
+{
+	var nonHBAdunits = [];
+
+	nonHBAdunits.push({
+		code:"QzD1x1",
+		oxId:"539393504",
+		sizes:[[1,1]],
+	});
+
+	for (var i = 0, len = nonHBAdunits.length; i < len; i++) {
+		OX_qzyNoHB[i] = OX();
+	    OX_qzyNoHB[i].addAdUnit(nonHBAdunits[i].oxId);
+	  	OX_qzyNoHB[i].setAdUnitSlotId(nonHBAdunits[i].oxId,nonHBAdunits[i].code); 
+	  	OX_qzyNoHB[i].load();
+	}
+}
+
 function initAdserver() {
 		if (typeof OX != 'function'){ 
 		  console.log('OpenX is not ready yet');
@@ -307,6 +326,8 @@ function initAdserver() {
 	  		} else { console.log('No targeting set for '+adUnits[i].code.toLowerCase());}
 	  		OX_qzy[i].load();
         }
+
+        loadNonHBAdunits();
 
         pbjs.initAdserverSet = true;
 };
