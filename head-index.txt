@@ -26,7 +26,6 @@ if(DeviceType.isDesktop()){
 			  				{bidder: "aol",params: {placement: "4478758",network: "10668.1"}},
 			  				{bidder: 'sovrn', params: {tagid: '435036'}},
 			  				{bidder:"appnexus",params:{placementId:"10925490"}},
-			  				{bidder:"sekindo",params:{placementId:"11089410"}},
 			  				{bidder:"conversant",params:{site_id:"112667"}},
 			  				{bidder: 'pulsepoint',params: {cf: '300X250',cp:561306 ,ct: 597774}},
 			  				{bidder: 'rhythmone',params: {placementId: '66907'}}
@@ -44,7 +43,6 @@ if(DeviceType.isDesktop()){
 			  				{bidder: "aol",params: {placement: "4478754",network: "10668.1"}},
 			  				{bidder: 'sovrn', params: {tagid: '435037'}},
 			  				{bidder:"appnexus",params:{placementId:"10925491"}},
-			  				{bidder:"sekindo",params:{placementId:"11090393"}},
 			  				{bidder:"conversant",params:{site_id:"112669"}},
 			  				{bidder: 'pulsepoint',params: {cf: '300X250',cp:561306 ,ct: 597775}},
 			  				{bidder: 'rhythmone',params: {placementId: '66907'}}
@@ -61,7 +59,6 @@ if(DeviceType.isDesktop()){
 			  				{bidder: "aol",params: {placement: "4478756",network: "10668.1"}},
 			  				{bidder: 'sovrn', params: {tagid: '435030'}},
 			  				{bidder:"appnexus",params:{placementId:"10925486"}},
-			  				{bidder:"sekindo",params:{placementId:"11089403"}},
 			  				{bidder:"conversant",params:{site_id:"112673"}},
 			  				{bidder: 'pulsepoint',params: {cf: '728X90',cp:561306 ,ct: 597576}},
 			  				{bidder: 'rhythmone',params: {placementId: '66907'}}
@@ -79,7 +76,6 @@ if(DeviceType.isDesktop()){
 			  				{bidder: "aol",params: {placement: "4478759",network: "10668.1"}},
 			  				{bidder: 'sovrn', params: {tagid: '435031'}},
 			  				{bidder:"appnexus",params:{placementId:"10925487"}},
-			  				{bidder:"sekindo",params:{placementId:"11089407"}},
 			  				{bidder:"conversant",params:{site_id:"112663"}},
 			  				{bidder: 'pulsepoint',params: {cf: '728X90',cp:561306 ,ct: 597769}},
 			  				{bidder: 'rhythmone',params: {placementId: '66907'}}
@@ -96,7 +92,6 @@ if(DeviceType.isDesktop()){
 			  				{bidder: "aol",params: {placement: "4478760",network: "10668.1"}},
 			  				{bidder: 'sovrn', params: {tagid: '435038'}},
 			  				{bidder:"appnexus",params:{placementId:"10925492"}},
-			  				{bidder:"sekindo",params:{placementId:"11089411"}},
 			  				{bidder:"conversant",params:{site_id:"112671"}},
 			  				{bidder: 'pulsepoint',params: {cf: '300X250',cp:561306 ,ct: 598137}},
 			  				{bidder: 'rhythmone',params: {placementId: '66907'}}
@@ -114,7 +109,6 @@ if(DeviceType.isDesktop()){
 			  				{bidder: "aol",params: {placement: "4478761",network: "10668.1"}},
 			  				{bidder: 'sovrn', params: {tagid: '435039'}},
 			  				{bidder:"appnexus",params:{placementId:"10925493"}},
-			  				{bidder:"sekindo",params:{placementId:"11089412"}},
 			  				{bidder:"conversant",params:{site_id:"112672"}},
 			  				{bidder: 'pulsepoint',params: {cf: '300X250',cp:561306 ,ct: 598140}},
 			  				{bidder: 'rhythmone',params: {placementId: '66907'}}
